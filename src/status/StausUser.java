@@ -11,6 +11,10 @@ package status;
  */
 public class StausUser 
 {
+    public enum Harrmancode{ZERO,ONE,TWO,THREE,};
+    
+    private String harmancode;
+    
    public void statusDetail(String code)
 {
 switch(code.toUpperCase())
@@ -30,5 +34,19 @@ switch(code.toUpperCase())
         break;
         }
 }
+
+    /**
+     * @return the harmancode
+     */
+    public String getHarmancode() {
+        return harmancode;
+    }
+
+    /**
+     * @param harmancode the harmancode to set
+     */
+    public void setHarmancode(String harmancode) {
+        this.harmancode = harmancode;
+    }
  
 }
